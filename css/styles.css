@@ -1,0 +1,111 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{ 
+  background: white;
+  /* background: -webkit-linear-gradient(to bottom, #d2f2ec, #acb6e5);
+  background: linear-gradient(to bottom, #d3eae6, #eeeff4); */
+}
+
+form{
+   margin:2em auto;
+  border: 1px solid black;
+  padding: 1em;
+  display:flex;
+  flex-direction: column;
+  border-radius:1em;
+  box-shadow:2px 2px 3px black;  
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  background-color: #fcfdfd;
+
+}
+
+.menor{
+  width: 90%;
+  
+}
+.mayor{
+  width: 100%;
+}
+fieldset{
+  margin: 0.5em;
+  padding: 0.5em;
+  color: rgb(0, 15, 128);  
+  width: 70%;
+}
+
+legend{  
+  
+  font-weight: bold;
+  border-radius:0.1em;
+  box-shadow:2px 2px 3px black;
+  padding: 0.5em;
+}
+
+label {
+  display: flex;  
+  flex-flow: row nowrap;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+  padding: 1em;
+  font-weight: bold;
+  font-size: medium;  
+}
+
+#opciones {
+  display: flex;
+  justify-content: center;
+}
+.boton {
+  background-color: #ccd7e8; /* Green */
+  border: none;
+  color: white;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+
+}
+
+.boton:hover {
+  background-color: white; /* White */
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+h1{
+  text-align: center;
+}
+
+input:invalid {
+  background-color: #ffdddd;
+}
+
+form:invalid {
+  border: 5px solid #ffdddd;
+}
+
+input:valid {
+  background-color: #ddffdd;
+}
+
+form:valid {
+  border: 5px solid #ddffdd;
+}
+
+input:required {
+  border-color: #800000;
+  border-width: 3px;
+}
+
+input:required:invalid {
+  border-color: #C00000;
+}
