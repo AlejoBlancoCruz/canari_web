@@ -36,11 +36,16 @@ window.addEventListener("load", function(event){
               
               // Crear un nuevo elemento p
               var p = document.createElement("p");
-              var text = document.createTextNode(fila.serv_descripcion);
-              p.appendChild(text);
+              // var text = document.createTextNode(fila.serv_descripcion);             
+              //p.appendChild(text);
+              var text = fila.serv_descripcion;             
+              p.innerHTML = text.replace(/\n/g, "<br>");
+
+              var salto = document.createElement("br");
 
               // Agregar los nuevos elementos al artículo       
               div2.appendChild(h2);
+              div2.appendChild(salto);
               div2.appendChild(p);
 
               div1.appendChild(img);
